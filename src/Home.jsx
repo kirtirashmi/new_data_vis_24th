@@ -49,9 +49,9 @@ function Home(props) {
   return (
     <main className="main-container">
       <h1 className='text-center mt-4'>IFS Cloud Setup Comparison Tool</h1>
-      <div className="main-title">
+      {/* <div className="main-title">
         <h3 className='m-4' style={{position:"absolute",top:"50px"}}>DASHBOARD</h3>
-      </div>
+      </div> */}
       <div className="charts" >
         <ReactEcharts option={option} style={{ height: "60vh", width: "60vw" }} />
       </div>
