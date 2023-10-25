@@ -5,6 +5,7 @@ import Sidebar from './Sidebar';
 import Home from './Home';
 import Users from './Users';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import CustomNavbar from './customNavBar/customNavbar'
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -18,6 +19,7 @@ function App() {
       <div className='grid-container'>
         <Header OpenSidebar={OpenSidebar} />
         {openSidebarToggle && <Sidebar />}
+        <CustomNavbar/>
         <Routes>
           <Route path="/Users" element={<Users />} />
           <Route path="/" element={<Home />} />
